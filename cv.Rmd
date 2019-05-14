@@ -3,23 +3,26 @@ geometry: left=1.5cm,right=1.5cm,top=2cm,bottom=2cm
 output:
     pdf_document:
        keep_tex: true
-    latex_engine: xelatex
+       latex_engine: xelatex
 header-includes:
   - \usepackage{wrapfig}
   - \usepackage{setspace}\onehalfspacing
-#  - \usepackage{fontspec}
-#  - \setmainfont{Liberation Serif}
+  - \usepackage{fontspec}
+  - \setmainfont[Path = data/fonts/volkhov/,
+                UprightFont = Volkhov-Regular,
+                BoldFont =  Volkhov-Bold,
+                Extension = .ttf]{volkhov}
 fontsize: 12pt
 ---
+
 \begin{wrapfigure}{r}{6.5cm}
   \begin{center}
-    \includegraphics{/home/frederik/Desktop/rmarkdown/profile_small_crop.jpg}
+    \includegraphics{img/profile_small_crop.jpg}
   \end{center}
 \end{wrapfigure}
 
-# Curriculum Vitae
-
-**Frederik Kok Hansen**  
+## Curriculum Vitae
+# Frederik Kok Hansen  
 6A. Kirkevænget, 3rd. floor, 2500 Valby  
 31st.	Of March  1988  
 (+45) 30 66 47 70	 
